@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Students Page</title>
+</head>
+<body>
+
+<h1>Wellcome</h1>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>FirstName</th>
+        <th>lastName</th>
+        <th>email</th>
+    </tr>
+
+    <tr th:each="student : ${students}">
+        <td th:text="${student.id}">123</td>
+        <td th:text="${student.firstName}">test</td>
+        <td th:text="${student.lastName}">test</td>
+        <td th:text="${student.email}">test</td>
+    </tr>
+
+</table>
+
+
+</body>
+</html>
